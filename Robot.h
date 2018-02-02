@@ -7,11 +7,13 @@
 #include <LiveWindow/LiveWindow.h>
 
 #include <OI.h>
-#include "Commands/TestPipeline.h"
 #include "WPILib.h"
+#include "Subsystems/VisionModule.h"
 
 class Robot: public frc::IterativeRobot{
 public:
+
+	static VisionModule vm;
 
 private:
 	frc::LiveWindow* lw = frc::LiveWindow::GetInstance();
